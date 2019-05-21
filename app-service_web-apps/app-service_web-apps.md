@@ -18,3 +18,5 @@ Other wise you will use infrastructure as a service
 3rd most popular
 Dashboard > New > Web > Web App
 
+new resource group
+
