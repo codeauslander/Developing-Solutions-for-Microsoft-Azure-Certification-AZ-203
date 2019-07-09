@@ -47,7 +47,52 @@ Get credential cluster
 Open Kubernetes dasboard
 `az aks browse --resource-group az-203 --name containerKubernetesCluster`
 
-## Docker
+## Docker tool box
+
+  Install
+  https://docs.docker.com/toolbox/toolbox_install_windows/
+
+  Test installation
+  `docker run hello-world`
+  //Hello from docker
+
+### Docker Compose Up
+
+  `git clone https://github.com/Azure-Samples/azure-voting-app-redis.git`
+
+  Go into the voting project
+  `cd azure-voting-app-redis`
+
+  List files and folders
+  `dir`
+
+  Use yaml file (in the example is
+  docker-compose.yaml)
+  contains instructions on how to deployet as a container image.
+
+
+  build container image from docker-compose.yaml
+  up and 
+  `docker-compose up -d`
+
+  docker-compose.yaml
+    2 servers front and back
+    Image where the code come from
+    Container name
+    Ports
+
+  check docker containers
+  `docker container ls`
+
+  docker runs in a virtual box
+
+  check ip on the docker machine
+  `docker-machine ip Default`
+
+  port: 8080
+  localmachine
+
+##Azure Container Registery
 
 `docker container ls`
 `docker-machine ip Default`
@@ -91,6 +136,7 @@ The idea is to modify the code put it into a virtual machine and deploy the virt
 Getting started
 
 https://github.com/Azure-Samples/aks-dotnet-manage-kubernetes-cluster
+
 
 
 
